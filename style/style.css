@@ -1,0 +1,35 @@
+body{
+    /* set a back ground image for body */
+    background-image: url("../assets/bg.jpeg"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.center {
+    background-color:rgba(255, 255, 255, 0.2); /* set transparency */
+    border: 1px solid;
+    /* put the main div in the center of the page */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.flex-x{
+    /* use flex for creating the desired layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.border-dash {
+    /* set dashed border */
+    border: 1px dashed;
+    border-radius: 5px;
+    padding: 5px;
+}
+

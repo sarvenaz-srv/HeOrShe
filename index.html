@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Mr. Or Ms. ?</title>
+        <meta name="description" content="Give me one's name and I will tell you their gender :)">
+        <meta name="author" content="Sarvenaz Sarvghad">
+        <link href="./style/style.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="./script/external.js" defer></script>
+    </head>
+    <body>
+        <div class="center flex-x">
+            <div>
+                <section>
+                    <h1>Mr. Or Ms. ?</h1>
+                    <form id="form">
+                        Name:
+                        <input type="text" name="name" value="" maxlength="255" id="name" />
+                        <br />
+                        <input type="radio" name="gender" value="male" /> male <br />
+                        <input type="radio" name="gender" value="female" /> female <br />
+                        <br />
+                        <button type="submit" id="submit-btn">Submit</button> <br />
+                        <button type="button" id="save-btn">Save</button>
+                        <p id="save-error"></p>
+                    </form>
+                </section>
+            </div>
+    
+            <div>
+                <section>
+                    <h1>Prediction</h1>
+                    <p>Gender: <span id="gender"></span></p>
+                    <p>Probability: <span id="probability"></span></p>
+                    <p id="prediction-error"></p>
+                </section>
+        
+                <section id="saved-answer-box" class="border-dash">
+                    <h1>Saved Answer</h1>
+                    <p>Saved gender: <span id="saved-gender"></span></p>
+                    <button type="button" id="clear-btn">Clear</button>
+                </section>
+            </div>
+        </div>
+
+    </body>
+</html>
